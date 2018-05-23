@@ -16,6 +16,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p003_largest_prime
         self.assertEqual(29, solutions.p003_largest_prime.run(13195))
 
+    def test_004_largest_palindrome(self):
+        import solutions.p004_largest_palindrome
+        self.assertEqual(9009, solutions.p004_largest_palindrome.run(100))
+
 
 if __name__ == "__main__":
     unittest.main()
