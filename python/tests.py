@@ -12,6 +12,10 @@ class TestSolutions(unittest.TestCase):
         self.assertEqual(10, solutions.p002_even_fib.run(10))
         self.assertEqual(44, solutions.p002_even_fib.run(60))
 
+    def test_003_largest_prime(self):
+        import solutions.p003_largest_prime
+        self.assertEqual(29, solutions.p003_largest_prime.run(13195))
+
 
 if __name__ == "__main__":
     unittest.main()
