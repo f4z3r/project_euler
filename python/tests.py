@@ -20,6 +20,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p004_largest_palindrome
         self.assertEqual(9009, solutions.p004_largest_palindrome.run(100))
 
+    def test_005_smallest_mult(self):
+        import solutions.p005_smallest_mult
+        self.assertEqual(2520, solutions.p005_smallest_mult.run(10, 1))
+
 
 if __name__ == "__main__":
     unittest.main()
