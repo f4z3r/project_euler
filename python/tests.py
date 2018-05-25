@@ -24,6 +24,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p005_smallest_mult
         self.assertEqual(2520, solutions.p005_smallest_mult.run(10, 1))
 
+    def test_006_sum_sq_diff(self):
+        import solutions.p006_sum_sq_diff
+        self.assertEqual(2640, solutions.p006_sum_sq_diff.run(10))
+
 
 if __name__ == "__main__":
     unittest.main()
