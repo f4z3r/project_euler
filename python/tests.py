@@ -28,6 +28,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p006_sum_sq_diff
         self.assertEqual(2640, solutions.p006_sum_sq_diff.run(10))
 
+    def test_007_10001_prime(self):
+        import solutions.p007_10001_prime
+        self.assertEqual(13, solutions.p007_10001_prime.run(6))
+
 
 if __name__ == "__main__":
     unittest.main()
