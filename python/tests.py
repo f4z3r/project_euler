@@ -32,6 +32,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p007_10001_prime
         self.assertEqual(13, solutions.p007_10001_prime.run(6))
 
+    def test_008_largest_prod_series(self):
+        import solutions.p008_largest_prod_series
+        self.assertEqual(5832, solutions.p008_largest_prod_series.run(4))
+
 
 if __name__ == "__main__":
     unittest.main()
