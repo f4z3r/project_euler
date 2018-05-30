@@ -36,6 +36,10 @@ class TestSolutions(unittest.TestCase):
         import solutions.p008_largest_prod_series
         self.assertEqual(5832, solutions.p008_largest_prod_series.run(4))
 
+    def test_009_pythagorean_triplet(self):
+        import solutions.p009_pythagorean_triplet
+        self.assertEqual(60, solutions.p009_pythagorean_triplet.run(12))
+
 
 if __name__ == "__main__":
     unittest.main()
