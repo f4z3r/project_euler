@@ -70,6 +70,10 @@ class TestSolutions(unittest.TestCase):
         ]
         self.assertLessEqual(1788696, solutions.p011_largest_prod_grid.run(grid))
 
+    def test_012_triangular_num(self):
+        import solutions.p012_triangular_num
+        self.assertEqual(28, solutions.p012_triangular_num.run(5))
+
 
 
 if __name__ == "__main__":
