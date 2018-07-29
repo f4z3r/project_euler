@@ -18,4 +18,9 @@ module P003
 
     factors.max
   end
+
+  # alternative solution one line solution
+  def self.run2 num
+    (2..num).select { |i| num % i == 0 and Prime.prime?(i) }.max
+  end
 end

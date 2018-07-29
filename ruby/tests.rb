@@ -17,5 +17,6 @@ class TestSolutions < Test::Unit::TestCase
 
   def test_p003
     assert_equal(29, P003::run(13195))
+    assert_equal(29, P003::run2(13195))
   end
 end
