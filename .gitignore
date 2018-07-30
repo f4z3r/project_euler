@@ -1,2 +1,13 @@
 .DS_Store
 __pycache__/
+
+
+crystal/docs/
+crystal/lib/
+crystal/bin/
+crystal/.shards/
+crystal/**/*.dwarf
+
+# Libraries don't need dependency lock
+# Dependencies will be locked in application that uses them
+crystal/shard.lock
