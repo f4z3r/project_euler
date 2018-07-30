@@ -8,4 +8,8 @@ describe Crystal do
   it "solution 002 works" do
     P002.run(100).should eq(44)
   end
+
+  it "solution 003 works" do
+    P003.run(13195).should eq(29)
+  end
 end
