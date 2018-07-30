@@ -12,4 +12,8 @@ describe Crystal do
   it "solution 003 works" do
     P003.run(13195).should eq(29)
   end
+
+  it "solution 004 works" do
+    P004.run(10, 100).should eq(9009)
+  end
 end
