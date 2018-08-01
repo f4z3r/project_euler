@@ -1,0 +1,18 @@
+matrix:
+  include:
+    - language: crystal
+      crystal: latest
+      before_script:
+        - cd crystal
+    - language: python
+      python: "3.6"
+      before_script:
+        - cd python
+      script:
+        - python -m unittest tests.py
+    - language: ruby
+      ruby: "2.5"
+      before_script:
+        - cd ruby
+      script:
+        - ruby tests.rb
