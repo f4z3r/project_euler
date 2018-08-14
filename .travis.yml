@@ -1,3 +1,7 @@
+dist: trusty
+branches:
+  only:
+    - master
 matrix:
   include:
     - language: crystal
@@ -17,6 +21,6 @@ matrix:
       script:
         - ruby tests.rb
     - language: rust
-      rust: "1.27"
+      rust: stable
       before_script:
         - cd rust
