@@ -17,7 +17,6 @@ matrix:
       script:
         - ruby tests.rb
     - language: rust
-      rust:
-        - 1.27.0
+      rust: "1.27"
       before_script:
         - cd rust
