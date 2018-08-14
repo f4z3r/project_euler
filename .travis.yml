@@ -16,3 +16,8 @@ matrix:
         - cd ruby
       script:
         - ruby tests.rb
+    - language: rust
+      rust:
+        - stable
+      before_script:
+        - cd rust
