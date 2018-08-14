@@ -25,4 +25,9 @@ describe Crystal do
     P005.run(10).should eq(2_520)
     P005.run(20).should eq(232_792_560)
   end
+
+  it "solution 006 works" do
+    P006.run(10).should eq(2640)
+    P006.run(100).should eq(25_164_150)
+  end
 end
