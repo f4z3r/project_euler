@@ -1,5 +1,19 @@
 //! utility module containing shared functionality for the problems
 
+
+pub fn is_prime(num: u64) -> bool {
+    if num <= 1 { return false }
+    if num <= 3 { return true }
+    if num % 2 == 0 || num % 3 == 0 { return false }
+
+    let mut i = 5_u64;
+    while i * i <= num {
+        if num % i == 0 || num % (i + 2) == 0 { return false }
+        i += 6;
+    }
+    true
+}
+
 pub struct FibRange {
     curr: u64,
     next: u64,
