@@ -16,3 +16,10 @@ crystal/shard.lock
 # rust
 /rust/target
 **/*.rs.bk
+
+
+# nim
+/nim/tests/*
+!/nim/**/*.nim
+!/nim/**/*.nims
+!/nim/**/*.nimble
