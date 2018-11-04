@@ -6,7 +6,12 @@
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
 from math import sum
-from sugar import lc,`[]`
+import sugar, sequtils
 
 proc solution*(num: int): int =
+  ## Making use of list comprehension, not very nice syntax imho.
   result = sum(lc[x | (x <- 1..<num, x mod 3 == 0 or x mod 5 == 0), int])
+
+proc solution2*(num: int): int =
+  ## Making use of iterators and filters (clearer syntax).
+  to_seq(1..<num).filter(x => x mod 3 == 0 or x mod 5 == 0).sum()

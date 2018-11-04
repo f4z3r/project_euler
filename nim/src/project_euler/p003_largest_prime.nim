@@ -5,23 +5,12 @@
 #
 # What is the largest prime factor of the number 600851475143 ?
 
-import math
+import math, sequtils, sugar
 
-proc is_prime(num: int): bool =
-  if num <= 1:
-    return false
-  elif num <= 3:
-    return true
-  elif num mod 2 == 0 or num mod 3 == 0:
-    return false
-  var i = 5
-  while i * i <= num:
-    if num mod i == 0 or num mod (i + 2) == 0:
-      return false
-    i += 6
-  true
+import lib/primes
 
 proc solution*(num: int): int =
+  ## Procedural solution.
   var factors: seq[int] = @[]
   for idx in 1..int(sqrt(float(num))):
     if num mod idx == 0:
@@ -31,3 +20,6 @@ proc solution*(num: int): int =
         factors.add(int(num/idx))
   max(factors)
 
+proc solution2*(num: int): int =
+  ## Functional, less performant but elegant solution.
+  to_seq(1..num).filter(x => num mod x == 0 and x.is_prime()).max()
