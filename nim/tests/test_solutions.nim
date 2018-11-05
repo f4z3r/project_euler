@@ -4,6 +4,7 @@ import unittest
 import project_euler/p001_multiples
 import project_euler/p002_even_fib
 import project_euler/p003_largest_prime
+import project_euler/p004_largest_palindrome
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -20,3 +21,6 @@ test "solution 2":
 test "solution 3":
   check p003_largest_prime.solution(13195) == 29
   check p003_largest_prime.solution2(13195) == 29
+
+test "solution 4":
+  check p004_largest_palindrome.solution(100) == 9009
