@@ -5,6 +5,7 @@ import project_euler/p001_multiples
 import project_euler/p002_even_fib
 import project_euler/p003_largest_prime
 import project_euler/p004_largest_palindrome
+import project_euler/p005_smallest_mult
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -24,3 +25,6 @@ test "solution 3":
 
 test "solution 4":
   check p004_largest_palindrome.solution(100) == 9009
+
+test "solution 5":
+  check p005_smallest_mult.solution(10) == 2520
