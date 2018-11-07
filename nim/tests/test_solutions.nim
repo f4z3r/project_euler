@@ -7,6 +7,7 @@ import project_euler/p003_largest_prime
 import project_euler/p004_largest_palindrome
 import project_euler/p005_smallest_mult
 import project_euler/p006_sum_sq_diff
+import project_euler/p007_10001_prime
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -32,3 +33,6 @@ test "solution 5":
 
 test "solution 6":
   check p006_sum_sq_diff.solution(10) == 2640
+
+test "solution 7":
+  check p007_10001_prime.solution(6) == 13

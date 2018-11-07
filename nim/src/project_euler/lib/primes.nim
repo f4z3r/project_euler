@@ -1,7 +1,7 @@
 # Helper module for prime numbers.
 
 proc is_prime*(num: int): bool =
-  ## Computes if `num` is prime.
+  ## Computes if `num` is prime. This is a naive approach which is very slow.
   if num <= 1:
     return false
   elif num <= 3:
