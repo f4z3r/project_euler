@@ -6,6 +6,7 @@ import project_euler/p002_even_fib
 import project_euler/p003_largest_prime
 import project_euler/p004_largest_palindrome
 import project_euler/p005_smallest_mult
+import project_euler/p006_sum_sq_diff
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -28,3 +29,6 @@ test "solution 4":
 
 test "solution 5":
   check p005_smallest_mult.solution(10) == 2520
+
+test "solution 6":
+  check p006_sum_sq_diff.solution(10) == 2640
