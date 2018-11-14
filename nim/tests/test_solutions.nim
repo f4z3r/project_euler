@@ -10,6 +10,7 @@ import project_euler/p006_sum_sq_diff
 import project_euler/p007_10001_prime
 import project_euler/p008_largest_prod_series
 import project_euler/p009_pythagorean_triplet
+import project_euler/p010_sum_primes
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -44,3 +45,6 @@ test "solution 8":
 
 test "solution 9":
   check p009_pythagorean_triplet.solution(12) == 60
+
+test "solution 10":
+  check p010_sum_primes.solution(10) == 17
