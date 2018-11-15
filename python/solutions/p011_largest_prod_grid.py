@@ -49,7 +49,7 @@ def run(grid):
             max_val = col_max
     for idx in range(20):
         diag1 = [grid[0 + i][idx + i] for i in range(20 - idx - 1)]
-        diag2 = [grid[idx + 1][0 + 1] for i in range(20 - idx - 1)]
+        diag2 = [grid[idx + i][0 + i] for i in range(20 - idx - 1)]
         diag1_max = get_array_max(diag1, 4)
         diag2_max = get_array_max(diag1, 4)
         if diag1_max > max_val:
