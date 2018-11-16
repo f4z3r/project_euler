@@ -12,6 +12,7 @@ import project_euler/p008_largest_prod_series
 import project_euler/p009_pythagorean_triplet
 import project_euler/p010_sum_primes
 import project_euler/p011_largest_prod_grid
+import project_euler/p012_triangular_num
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -74,3 +75,6 @@ test "solution 11":
     [ 1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52,  1, 89, 19, 67, 48],
   ]
   check p011_largest_prod_grid.solution(grid) == 51267216
+
+test "solution 12":
+  check p012_triangular_num.solution(5) == 28
