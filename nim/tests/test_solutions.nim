@@ -14,6 +14,7 @@ import project_euler/p010_sum_primes
 import project_euler/p011_largest_prod_grid
 import project_euler/p012_triangular_num
 import project_euler/p013_large_sum
+import project_euler/p014_collatz_seq
 
 test "solution 1":
   check p001_multiples.solution(10) == 23
@@ -184,3 +185,6 @@ test "solution 13":
     "53503534226472524250874054075591789781264330331690",
   ]
   check p013_large_sum.solution(nums) == 9831892672'u64
+
+test "solution 14":
+  check p014_collatz_seq.solution(10) == 20   # Collatz of 9 is 20 long
