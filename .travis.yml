@@ -9,13 +9,13 @@ matrix:
       before_script:
         - cd crystal
     - language: python
-      python: "3.6"
+      python: 3.6
       before_script:
         - cd python
       script:
         - python -m unittest tests.py
     - language: ruby
-      ruby: "2.5"
+      ruby: 2.5
       before_script:
         - cd ruby
       script:
@@ -24,7 +24,7 @@ matrix:
       rust: stable
       before_script:
         - cd rust
-    - name: "nim"
+    - name: nim
       sudo: required
       services:
         - docker
@@ -34,3 +34,7 @@ matrix:
         - cd nim
         - docker run nimlang/nim nim --version
         - docker run -v "$(pwd):/project" -w /project nimlang/nim sh -c "nimble install -dy && nimble test"
+    - language: scala
+      scala: 2.12.5
+      before_script:
+        - cd scala
