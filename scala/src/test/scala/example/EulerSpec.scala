@@ -12,4 +12,8 @@ class EulerSpec extends FlatSpec with Matchers {
     P002.run(100) shouldEqual 44
     P002.run(4000000) shouldEqual 4613732
   }
+
+  "Problem 3" should "be solved" in {
+    P003.run(13195) shouldEqual 29
+  }
 }
