@@ -2,7 +2,7 @@ package example
 
 object P003 {
   def run(a: Int): Int = {
-    primeFactors(a).last
+    primeFactors(a).max
   }
 
   private def primeFactors(a: Int): List[Int] = {
