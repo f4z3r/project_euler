@@ -59,4 +59,8 @@ class EulerSpec extends FlatSpec with Matchers {
     """.filter(_.isDigit)
     P008.run(4, num) shouldEqual 5832
   }
+
+  "Problem 9" should "be solved" in {
+    P009.run(12) shouldEqual 60
+  }
 }
