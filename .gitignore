@@ -1,5 +1,6 @@
 .DS_Store
 .#*
+*.swp
 __pycache__/
 .vscode/
 
@@ -14,18 +15,15 @@ crystal/**/*.dwarf
 # Dependencies will be locked in application that uses them
 crystal/shard.lock
 
-
 # rust
 /rust/target
 **/*.rs.bk
-
 
 # nim
 /nim/tests/*
 !/nim/**/*.nim
 !/nim/**/*.nims
 !/nim/**/*.nimble
-
 
 # scala
 /scala/target/
