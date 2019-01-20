@@ -8,5 +8,5 @@
 # find the sum of all the mutliples of 5 or 5 below 1000.
 
 sub p001(Int $num) returns Int {
-    (0..$num-1).grep({ $_ % 5 == 0 or $_ % 3 == 0 }).sum;
+    (0..$num-1).grep({ $_ %% 5 or $_ %% 3 }).sum;
 }
