@@ -13,5 +13,5 @@ sub p003(Int $num where $num > 0) returns Int is export {
         .map({ ($num div $_).is-prime
             ?? ($_, $num div $_)
             !! $_ });
-    @factors.pop;
+    @factors.max;
 } 
