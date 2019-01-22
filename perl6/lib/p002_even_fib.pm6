@@ -8,6 +8,6 @@
 # by considering the terms in the fibonacci sequence whose values do not exceed
 # four million, find the sum of the even terms.
 
-sub p002(Int $num where $num > 0) returns Int {
+sub p002(Int $num where $num > 0) returns Int is export {
     [+] (1, 2, *+* ...^ * > $num).grep(* %% 2);        
 }

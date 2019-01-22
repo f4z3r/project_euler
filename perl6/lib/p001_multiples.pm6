@@ -7,6 +7,6 @@
 #
 # find the sum of all the mutliples of 5 or 5 below 1000.
 
-sub p001(Int $num where $num > 0) returns Int {
+sub p001(Int $num where $num > 0) returns Int is export {
     [+] grep { $_ %% (3|5) }, ^$num;
 }

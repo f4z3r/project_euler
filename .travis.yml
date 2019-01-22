@@ -38,3 +38,7 @@ matrix:
       scala: 2.12.5
       before_script:
         - cd scala
+    - language: perl6
+      perl6: latest
+      before_script:
+          - cd perl6
