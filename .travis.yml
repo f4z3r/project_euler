@@ -39,6 +39,6 @@ matrix:
       before_script:
         - cd scala
     - language: perl6
-      perl6: latest
+      perl6: "2018.10"
       before_script:
           - cd perl6
